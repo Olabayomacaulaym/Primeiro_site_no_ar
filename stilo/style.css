@@ -1,0 +1,230 @@
+* {
+    margin: 0px ;
+    padding: 0px ;
+}
+:root {
+    --cor1: #3b4f69 ; 
+    --cor01:#899dd1 ;
+    --cor2: #7c0016 ; 
+    --cor3: #e1cbbe ;
+    --cor4: #200e0a ; 
+
+    /* As fontes que serão aplicadas no site */
+    
+    --font1: pri ; 
+    --font2: seg ; 
+    --font3: ter ; 
+    --font4: qua ; 
+}
+body {
+        background-color: #7182ac;
+}
+
+header {
+    background-image: linear-gradient( to bottom, var(--cor01), var(--cor1));
+    padding: 15px ;
+    
+}
+
+header > h1 {
+                font-family: var(--font1);
+                color:white ; 
+                text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.363);
+                text-align: center;
+                margin: 10px auto 15px auto ;
+            }
+
+header > p {
+                font-family: var(--font2);
+                text-align: center;
+                font-size: 1.2em ;
+                color: white;
+                margin: 5px auto 20px auto;
+
+}
+
+nav {
+        background-color: var(--cor1);
+        padding: 10px ;
+        box-shadow: 1px 15px 17px 6px #00000070 ;
+
+}
+
+nav > a {
+            text-decoration: none;
+            margin: 2px 5px 2px 8px ; 
+            font-family: var(--font3);
+            color: white;
+
+}
+
+nav > a:hover {
+                    color: black;
+                    background-color: var(--cor3);
+                    padding: 3px ; 
+                    border-radius: 4px ;
+                    transition: 0.5s;
+                    
+}
+
+nav > a:active {
+                    color: var(--cor2)
+
+}
+
+nav > a:visited {
+                    color: darkgray;
+}
+
+main {
+        background-color: white ;
+        padding: 23px ; 
+        max-width: 850px ;
+        border-radius: 0px 0px 5px 5px ;
+        margin: 0px auto;
+        box-shadow:10px 8px 18px 1px #00000054;
+        margin-bottom: 20px ;
+}
+
+main > article > h1 {
+        
+        font-family: var(--font1);
+        margin: 10px auto 15px ;
+        color: var(--cor1);
+        text-indent: 30px ;
+}
+
+p {
+        font-family: var(--font4);
+        line-height: 1.8em ;
+        font-size: 1.1em ;
+        text-align: justify;
+        text-indent: 25px ;
+}
+
+main > article > h2 {
+        
+        font-family: var(--font1);
+        text-indent: 30px ;
+        font-size: 1.4em ;
+        margin: 10px auto 12px auto ;
+        color: var(--cor1);
+}
+
+/* Estilos para os links que estão dentro da parte principal do site */
+.fora {
+        text-decoration: none; 
+        color:var(--cor2)  ; 
+        padding: 4px ;
+
+}
+
+.fora:active {
+                color:var(--cor4) ; 
+
+}
+
+.fora:visited {
+                color: darkgray ; 
+                
+}
+
+.fora::after{
+        content: "🔗";
+      }
+     
+
+img {
+      width: 100% ; 
+}
+
+.cl {
+        width: 100% ;
+        background-color: var(--cor2);
+        height: 250px ;
+        margin: 20px auto 20px auto ;
+        border-radius: 9px ;
+}
+
+.cl > iframe {
+                    height: 250px;
+                    width: 100% ;
+                    border-radius: 9px ;
+}
+
+/* Esta classe será aplicada para imagen de Bugdroid */
+
+.quena {
+            max-width: 300px ;
+            margin: 0px auto ;
+            display: block;
+}
+
+/* Esta classe pertence ao título do h2 que econtra na parte periférico do site */
+
+.paraele {
+            font-family: var(--font1);
+            font-size: 1.3em ;
+            background-color: var(--cor01);
+            color: white;
+            padding: 7px  ;
+            border-radius: 8px 8px 0px 0px ; 
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.329);    
+}
+
+/* Este estilo é aplicada para os conteúdos que estão dentro da sessão aside no site */ 
+aside {
+        background-color: var(--cor3);
+        padding: 27px ;
+        margin: -12px auto 20px auto;
+        border-radius: 0px 0px 2px 2px ;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.329);
+}
+
+/* estilos para listas que estão dentro da parte periférico do site */
+    main > article > aside > ul {
+                    columns: 2;
+                    list-style-position: inside;
+                    list-style-type:  "✒ \00A0";
+                    margin: 15px auto 15px auto ;
+
+    }
+
+    main > article > aside > ul > li > abbr {
+                    
+                    text-decoration: none;
+                    line-height: 1.8em ;
+                    font-family: var(--font3);
+    }
+    
+
+    /* estilo para ultima parte do site que é o footer em English e rodapé em português */ 
+footer {
+        background-color: var(--cor1);
+        text-align: center ;
+        padding: 10px ;
+        font-family: var(--font4);
+        font-size: 1.1em;
+        color: white;
+}
+
+/* estilo para o link que dentro do rodapé do site */ 
+footer > a  {
+        
+        text-decoration: none;
+        color: white;
+
+}
+
+footer > a:hover {
+        background-color: var(--cor2);
+        background-color: var(--cor4);
+        color: white ;
+        padding: 4px ;
+        border-radius: 3px ;
+}
+
+footer > a:visited {
+
+        color: var(--cor2);
+}
